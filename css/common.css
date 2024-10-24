@@ -188,6 +188,10 @@ svg>path {
     max-width: 100%;
 }
 
+.thankyou1, .thankyou2 {
+    font-size: 30px;
+}
+
 @media only screen and (max-width: 1024px) {
     .place-event{
         display: unset!important;
@@ -208,5 +212,8 @@ svg>path {
     }
     .right-content img{
         max-width: 100%;
+    }
+    .thankyou1, .thankyou2 {
+        font-size: 20px;
     }
   }

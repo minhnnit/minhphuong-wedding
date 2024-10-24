@@ -26,7 +26,7 @@ const translations = {
       brideaddress: "Hoa Nam, Ung Hoa, Ha Noi",
       imagealbum: "Gallery",
       sendgift: "마음을 전하실 곳",
-      thankyou1: "이 자리에 참석하시어 축복해주시면 더 없는 기쁨으로 간직하겠습니다.",
+      thankyou1: "이 자리에 참석하시어 축복해주시면 <span class=\"mobile-break\">더 없는 기쁨으로</span> <span class=\"mobile-break\"> 간직하겠습니다.</span>",
       thankyou2: "감사합니다!",
       bridemenu: "신랑 신부",
       weddingdatemenu: "결혼 날짜",
@@ -73,7 +73,7 @@ const translations = {
     document.querySelector('.brideaddress').innerText = translations.korean.brideaddress;
     document.querySelector('.imagealbum').innerText = translations.korean.imagealbum;
     document.querySelector('.sendgift').innerText = translations.korean.sendgift;
-    document.querySelector('.thankyou1').innerText = translations.korean.thankyou1;
+    document.querySelector('.thankyou1').innerHTML = translations.korean.thankyou1;
     document.querySelector('.thankyou2').innerText = translations.korean.thankyou2;
     document.querySelector('.bridemenu').innerText = translations.korean.bridemenu;
     document.querySelector('.weddingdatemenu').innerText = translations.korean.weddingdatemenu;
