@@ -1,0 +1,212 @@
+* {
+    transition: background-color 350ms ease, color 50ms ease;
+}
+
+html {
+    scroll-behavior: smooth !important;
+    width: 100vw;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+svg {
+    transition: background-color 350ms ease;
+}
+
+svg>path {
+    transition: color 350ms ease;
+}
+
+.bg-theme-light {
+    background-color: var(--bs-gray-100);
+}
+
+.bg-theme-dark {
+    background-color: var(--bs-gray-800);
+}
+
+.card-body {
+    overflow-wrap: break-word !important;
+}
+.place{
+    border-radius: 5px;
+    margin: 30px 0 30px 0;
+}
+.invitation-card img{
+    max-width: 100%;
+    width: 320px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    padding: 8px;
+    border-radius: 999px 999px 0 0;
+}
+
+.invi_time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.invi_group_time {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 8px;
+}
+
+.invi_date_text, .invi_year_text {
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding: 4px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.invi_date_number {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 68px;
+    margin-top: 21px;
+}
+.allcomment-title{
+    margin-top: 30px;
+}
+.send-comment {
+    max-width: 450px;
+    max-height: 475px;
+    background: #ffffff;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px dashed #ced4da;
+
+}
+
+#pagination-container{
+    margin-bottom: 30px;
+}
+
+.send-comment label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.send-comment input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.send-comment button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.send-comment button:hover {
+    background-color: #0056b3;
+}
+
+.send-comment .message-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.message {
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message strong {
+    font-size: 18px;
+    color: #007bff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.message p {
+    font-size: 16px;
+    color: #495057;
+    margin: 0;
+}
+
+.pagination-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-btn {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.page-btn.active {
+    background-color: #0056b3;
+}
+
+.page-btn:hover {
+    background-color: #0056b3;
+}
+
+.placeevent{
+    font-size: 32px;
+}
+
+.place-event{
+    display: flex!important;
+    justify-content: space-around;
+}
+.right-content img{
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .place-event{
+        display: unset!important;
+    }
+}
+
+/* CSS cho màn hình mobile (tối đa 768px) */
+@media only screen and (max-width: 768px) {
+    h1.playwrite-gb-s, h2.playwrite-gb-s, .place p.py-2m .placeevent{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-break::before {
+      content: "\A"; /* Chèn dấu xuống dòng */
+      white-space: pre; /* Giữ ký tự xuống dòng */
+    }
+    .right-content img{
+        max-width: 100%;
+    }
+  }
