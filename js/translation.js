@@ -63,11 +63,20 @@ const translations = {
     document.querySelector('.timestartgroom').innerText = translations.korean.timestart;
     document.querySelector('.timestartbride').innerText = translations.korean.timestart;
     document.querySelectorAll('.invi_date_text').forEach(function(element) {
-        element.innerText = translations.korean.invitedatetext;
+        element.innerText = '2024';
     });
+    document.querySelectorAll('.invi_year_text').forEach(function(element) {
+      element.innerText = translations.korean.invitedatetext;
+  });
     document.querySelectorAll('.lunarcalendar').forEach(function(element) {
         element.innerText = translations.korean.lunarcalendar;
     });
+    document.querySelectorAll('.invi_date').forEach(function(element) {
+      element.innerText = '11';
+  });
+  document.querySelectorAll('.invi_month').forEach(function(element) {
+    element.innerText = '10';
+});
     document.querySelector('.groomaddress').innerText = translations.korean.groomaddress;
     document.querySelector('.bridehome').innerText = translations.korean.bridehome;
     document.querySelector('.brideaddress').innerText = translations.korean.brideaddress;
