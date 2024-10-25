@@ -16,7 +16,7 @@ const translations = {
       hour: "시간",
       minute: "분",
       second: "초",
-      placeevent: "신랑측과 신부측의 예식 장소",
+      placeevent: "신랑 측과 신부 측의<span class=\"mobile-break\"> 결혼 축하 연회 장소</span>",
       groomhome: "신랑 자택",
       timestart: "",
       invitedatetext: "일요일",
@@ -58,7 +58,7 @@ const translations = {
     document.querySelector('.hour').innerText = translations.korean.hour;
     document.querySelector('.minute').innerText = translations.korean.minute;
     document.querySelector('.second').innerText = translations.korean.second;
-    document.querySelector('.placeevent').innerText = translations.korean.placeevent;
+    document.querySelector('.placeevent').innerHTML = translations.korean.placeevent;
     document.querySelector('.groomhome').innerText = translations.korean.groomhome;
     document.querySelector('.timestartgroom').innerText = translations.korean.timestart;
     document.querySelector('.timestartbride').innerText = translations.korean.timestart;
