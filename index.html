@@ -461,15 +461,18 @@
         <div class="container">
             <div class="pb-2">
                 <div class="text-center">
-                    <div class="send-comment">
+
+                    <div id="comment-form">
                         <h2 class="playwrite-gb-s mt-0 mb-3 sendcommenttitle">Gửi lời chúc đến cặp đôi</h2>
                         <!-- Form for user to input name and message -->
                         <form id="wish-form">
                             <label for="name" class="commentname">Tên bạn:</label>
-                            <input type="text" id="name" required>
+                            
+                            <input type="text" id="name-input" class="commentname" required>
                             <br>
                             <label for="message" class="commentmessage">Lời chúc phúc của bạn đến cặp đôi:</label>
-                            <input type="text" id="message" required>
+                            
+                            <textarea id="comment-input" required style="width: 300px"></textarea>
                             <br><br>
                             <button type="submit" class="sendcommentcontent">Gửi lời chúc</button>
                         </form>
@@ -481,16 +484,17 @@
                         <h3 class="playwrite-gb-s mt-0 mb-3 allcomment">Tất cả lời chúc cho cặp đôi</h3>
                     </div>
                     <!-- Container to display saved wishes -->
-                    <div id="wishes-container" class="message-container"></div>
+                    <div id="comment-list"></div>
                     <!-- Container for pagination controls -->
                     <div id="pagination-container" class="pagination-controls"></div>
                 </div>
             </div>
         </div>
-
         
     
-        <script src="./js/comments.js"></script>
+        <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+        <script src="./js/supabase.js"></script>
 
         <!-- Love Gift -->
         <div class="container">
